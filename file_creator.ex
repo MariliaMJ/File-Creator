@@ -1,5 +1,5 @@
-defmodule File.Creator do
-	@file_path "/home/mariliamjcm/shares.txt"
+defmodule File.CSV do
+	@file_path "/home/mariliamjcm/veves_shares.csv"
 	@header "INVESTMENT DATE, SHARES PURCHASED, CASH PAID, INVESTOR"
 
 
