@@ -20,11 +20,13 @@ defmodule Thoth.CSV do
 		row = [create_row()]
 		produce_rows(row, 1)
 	end
+
 	defp produce_rows(rows, 1000) do
 		rows
 		|> List.insert_at(0, @header)
 		|> Enum.join()
 	end
+	
 	defp produce_rows(rows, acc) do
 		rows = rows ++ [create_row()]
 
